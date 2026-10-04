@@ -4,7 +4,7 @@ KeeperFX is an open-source remake and fan expansion of Dungeon Keeper.
 The main goal of KeeperFX is to preserve and expand upon the original Dungeon Keeper experience, offering many new features, improvements, and much more while staying true to the original feeling of the game.
 You can delve into the original campaign, or enjoy custom content created by the community and shared on the Workshop.
 
-This port is KeeperFX 1.4.0 (build 1.4.0.5136, the same version number as the Windows release).
+This port is KeeperFX 1.4.0 (shown as "1.4.0.5136 Portmaster"; the same version number as the Windows release).
 
 ## About KeeperFX
 

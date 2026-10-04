@@ -38,7 +38,7 @@ LIBS="-L$P/lib -lastronomy -ljson -lenet6 \
  -l:libluajit-5.1.a -l:libspng_static.a -l:libminizip.a -l:libminiupnpc.a -l:libnatpmp.a \
  -lcurl -lmbedtls -lmbedx509 -lmbedcrypto -lz -lpthread -ldl -lm"
 
-make -f linux.mk -j"$(nproc)" CC="$CC" CXX="$CXX" BUILD_NUMBER=$BUILD_NUMBER VER_SUFFIX= \
+make -f linux.mk -j"$(nproc)" CC="$CC" CXX="$CXX" BUILD_NUMBER=$BUILD_NUMBER VER_SUFFIX=Portmaster \
   KFX_CFLAGS="$OPT $INC $WARN -Wno-absolute-value -Wno-format-truncation" \
   KFX_CXXFLAGS="$OPT $INC $WARN -Wno-format-truncation" \
   TOML_CFLAGS="-O3 $M -Ideps/centijson/include" \
