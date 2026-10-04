@@ -2,17 +2,18 @@
   "version": 4,
   "name": "keeperfx.zip",
   "items": [
+    "KeeperFX.sh",
     "keeperfx"
   ],
   "items_opt": [],
   "attr": {
-    "title": "keeperfx",
+    "title": "KeeperFX",
     "porter": [
       "qqluqq"
     ],
     "desc": "KeeperFX is an open-source remake and fan expansion of Dungeon Keeper.\n\nThe main goal of KeeperFX is to preserve and expand upon the original Dungeon Keeper experience, offering many new features, improvements, and much more while staying true to the original feeling of the game.\n\nYou can delve into the original campaign, or enjoy custom content created by the community and shared on the Workshop.",
     "desc_md": null,
-    "inst": "List of files required from original DK.\n------------------------------\n\nThis document lists files which need to be added to KeeperFX from original dungeon Keeper CD, or one of the digital releases of the game.\n\nFiles included in GOG version:\n http://www.gog.com/en/gamecard/dungeon_keeper\ncan be used, but only those inside CD image file\nshipped with that version. The CD image has to be\nextracted or mounted to use these files.\n\nList of required files will follow:\n\n./data/bluepal.dat\n./data/bluepall.dat\n./data/dogpal.pal\n./data/hitpall.dat\n./data/lightng.pal\n./data/main.pal\n./data/mapfadeg.dat\n./data/redpal.col\n./data/redpall.dat\n./data/slab0-0.dat\n./data/slab0-1.dat\n./data/vampal.pal\n./data/whitepal.col\n\n./sound/atmos1.sbk\n./sound/atmos2.sbk\n./sound/bullfrog.sbk",
+    "inst": "KeeperFX 1.4.0 needs files from the original Dungeon Keeper (CD, GOG, EA or Steam release). Copy bluepal.dat, bluepall.dat, dogpal.pal, hitpall.dat, lightng.pal, main.pal, mapfadeg.dat, redpal.col, redpall.dat, slab0-0.dat, slab0-1.dat, vampal.pal and whitepal.col into ports/keeperfx/data, and atmos1.sbk, atmos2.sbk and bullfrog.sbk into ports/keeperfx/sound. Upper or lower case file names both work. GOG: they are in the DATA and SOUND folders of the installed game; its keeper02.ogg to keeper07.ogg music files can go into ports/keeperfx/music.",
     "inst_md": null,
     "genres": [
       "strategy"
