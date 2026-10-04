@@ -1,0 +1,23 @@
+Let Start, A or B skip movies. The startup intro plays before load_settings(),
+so the controller game-key bindings (Start = Escape, R2 = left click) are still
+empty then and a controller could not skip it.
+--- a/src/bflib_fmvids.cpp
++++ b/src/bflib_fmvids.cpp
+@@ -2,6 +2,7 @@
+ #include "bflib_fmvids.h"
+ #include "bflib_video.h"
+ #include "bflib_inputctrl.h"
++#include "bflib_joyst.h"
+ #include "bflib_keybrd.h"
+ #include "bflib_vidsurface.h"
+ #include "bflib_fileio.h"
+@@ -582,6 +583,9 @@
+ 			} else if (lbKeyOn[KC_ESCAPE] || lbKeyOn[KC_RETURN] || lbKeyOn[KC_SPACE] || lbDisplay.LeftButton) {
+ 				clear_key_pressed(lbInkey);
+ 				return false;
++			} else if (controller_button_state & (CBtn_START | CBtn_A | CBtn_B)) {
++				controller_button_state &= ~(CBtn_START | CBtn_A | CBtn_B);
++				return false;
+ 			}
+ 		}
+ 	}
